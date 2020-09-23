@@ -22,7 +22,7 @@ def appointments
     appointments.collect {|appointment| appointment.doctor}
   end
 
-  def new_appointment(doctor, date)
+  def new_appointment(date, doctor)
     binding.pry
     Appointment.new(self, date, doctor)
 end
